@@ -1,0 +1,64 @@
+git init, clone
+
+# `cd` to a new directory ("demo") and `git status`.
+# `git init` and then `git status`.
+# `rm -rf .git` and then `git status`.
+# Create a new repo using Github.
+# Pause on setup instructions.
+
+
+git status, log, diff
+
+# Talk about working directory, index, and repository.
+# Follow instructions to set up brand new repo.
+# `git status`.
+# `git log`. Note unhelpful error message.
+# HEAD points to most recent commit, but there are no commits.
+# `git diff` shows difference between index and working copy.
+
+
+git add, commit, push
+
+# `git commit`. File is not tracked until I say so.
+# `git add README.md` and `git status`.
+# `git commit` and exit ("ZZ"). Note that commit was aborted.
+# `git commit -m "Initial commit."`
+# `git status`
+# Why can't Lewis see my changes?
+# `git push origin master`
+# View repo in browser.
+# Note that this is the most useful part of the talk.
+
+
+git fetch, merge, pull
+
+# Edit file on Github. Commit directly to master.
+# `git fetch`. Note output.
+# `git status` and `git log`. Note lack of change.
+# `git merge origin/master`.
+# `git status` and `git log`. Note change.
+# `git fetch` + `git merge` = `git pull`
+# Update file again.
+# `git pull origin master`.
+# `git status` and `git log`.
+
+
+git revert, reset, checkout
+
+# `git revert HEAD` creates a commit to undo my most recent commit.
+# `git reset HEAD~1` removes the most recent commit. `git status`.
+# `git reset --hard HEAD`. BE SUPER CAREFUL WITH THIS.
+# `git checkout HEAD~2 README.md` changes the file to the way it was two commits ago.
+
+merge conflicts
+
+# Edit file on client.
+# `git add README.md` and `git commit -m "Update on client."`
+# Edit file on Github. "Update on server."
+# `git pull origin master`. View error message.
+# `git reset --merge` because that is pretty cool.
+# `git pull origin master` again.
+# `vim README.md`. Fix conflicts. Mention how I always have trouble with this.
+# `git add` and `git commit -m "Integrated changes."`
+# `git push origin master`
+# `git log --graph --oneline`
