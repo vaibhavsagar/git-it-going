@@ -62,3 +62,11 @@ merge conflicts
 # `git add` and `git commit -m "Integrated changes."`
 # `git push origin master`
 # `git log --graph --oneline`
+
+branching
+
+# So far Git is effectively a more complicated SVN
+# But Git was supposed to make all my dreams come true!
+# `gitk &` is a GUI
+# `git checkout -b branch-a master`
+# `git log --graph --oneline --decorate`
