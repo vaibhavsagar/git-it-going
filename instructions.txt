@@ -70,3 +70,13 @@ branching
 # `gitk &` is a GUI
 # `git checkout -b branch-a master`
 # `git log --graph --oneline --decorate`
+# `vim README.md`. Add a line to the file.
+# `git commit -am "Branch specific commit."`
+# `git checkout master` goes back to the master branch.
+# `git log --graph --oneline --decorate`
+# `git merge branch-a`. Fast-forward = linear commits, move pointer, all good.
+# `git branch -d branch-a` deletes the branch.
+# `git checkout -b branch-b master`
+# `vim README.md`. Add "Merge conflict!" line.
+# `git commit -am "Another branch commit."`
+# `git checkout master`
