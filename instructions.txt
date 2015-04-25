@@ -80,3 +80,8 @@ branching
 # `vim README.md`. Add "Merge conflict!" line.
 # `git commit -am "Another branch commit."`
 # `git checkout master`
+# `vim README.md`. Add "Merge conflict?" line.
+# `git commit -am "Commit straight to master."`
+# `git merge branch-b`. Merge conflict as expected.
+# `vim README.md`. Remove conflict markers.
+# `git commit -am "Conflict resolved."`
