@@ -1,2 +1,2 @@
 talk:
-	pandoc -t beamer presentation.txt -o presentation.pdf
+	pandoc -t slidy presentation.md -o presentation.html --standalone
