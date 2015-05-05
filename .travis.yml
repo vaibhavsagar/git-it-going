@@ -1,12 +1,15 @@
 language: c
 install: bash .ci/prepare.sh
 script: make
-sudo: true
 notifications:
   email:
     on_success: always
     on_failure: always
 after_success: bash.ci/update_pages.sh
+addons:
+  apt:
+    packages:
+      - jq
 env:
   global:
     secure: CzE3x2pGxUqqlB9jCHIFFA7w1+V+PNMOnhHtNSpNDc0azI/vdATfqnWascucStif4isV9QX+517eJG/mVW+8GzxH5qvIS4GzbayaECRHT2DMKuUEHvHc3LsPyQuPQkkBjWfDLx2HgwwzWEztD/Lo03CRaYBnQMWNqB+po8Xht6U=
