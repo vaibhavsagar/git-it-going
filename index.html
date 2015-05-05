@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Vaibhav Sagar" />
+  <title>Git It Going</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" type="text/css" media="screen, projection, print"
+    href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
+  <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js"
+    charset="utf-8" type="text/javascript"></script>
+</head>
+<body>
+<div class="slide titlepage">
+  <h1 class="title">Git It Going</h1>
+  <p class="author">
+Vaibhav Sagar
+  </p>
+</div>
+<div id="intro" class="titleslide slide section level1"><h1>Intro</h1></div><div id="about-this-presentation" class="slide section level2">
+<h1>About this presentation</h1>
+<ul>
+<li>Basic introduction to Git</li>
+<li>Contrived toy examples</li>
+</ul>
+</div><div id="about-git" class="slide section level2">
+<h1>About Git</h1>
+<ul>
+<li>'Checkout' and 'Commit' mean different things to SVN</li>
+<li><p>Has a 'staging area'</p>
+<pre><code>Working           Staging       .git directory
+Directory           Area         (Repository)
+   |                 |                |
+   |&lt;------------ Checkout -----------|
+   |                 |                |
+   |-- Stage Fixes -&gt;|                |
+   |                 |                |
+   |                 |---- Commit ---&gt;|</code></pre></li>
+<li><p>Each commit represents a snapshot of the entire project, not just a delta</p>
+<pre><code>                     Checkins Over Time
+---------------------------------------------------------------&gt;
+  +---------+      +---------+      +---------+      +---------+    
+  |Version 1|      |Version 2|      |Version 3|      |Version 4|    
+  +---------+      +---------+      +---------+      +---------+    
+       |                |                |                |         
+  +---------+      +---------+      +---------+      +---------+    
+  | File A  |      | File A1&lt;-------+ File A1 |      | File A2 |    
+  +---------+      +---------+      +---------+      +---------+    
+       |                |                |                |         
+  +---------+      +---------+      +---------+      +---------+    
+  | File B &lt;-------+ File B &lt;-------+ File B  |      | File B1 |    
+  +---------+      +---------+      +---------+      +---------+    
+       |                |                |                |         
+  +---------+      +---------+      +---------+      +---------+    
+  | File C  |      | File C1 |      | File C2&lt;-------+ File C2 |    
+  +---------+      +---------+      +---------+      +---------+    </code></pre></li>
+<li><p>Every commit/snapshot has a SHA-1 hash that serves as a UID.</p></li>
+</ul>
+</div>
+<div id="git-started" class="titleslide slide section level1"><h1>Git Started</h1></div><div id="git-init-clone" class="slide section level2">
+<h1>git init, clone</h1>
+<ul>
+<li><strong>git init</strong> - Create an empty Git repository or reinitialise an existing one</li>
+<li><strong>git clone</strong> - Clone a repository into a new directory</li>
+</ul>
+</div><div id="git-status-log-diff" class="slide section level2">
+<h1>git status, log, diff</h1>
+<ul>
+<li><strong>git status</strong> - Show the working tree status</li>
+<li><strong>git log</strong> - Show commit logs</li>
+</ul>
+</div><div id="git-add-commit-push" class="slide section level2">
+<h1>git add, commit, push</h1>
+<ul>
+<li><strong>git add</strong> - Add file contents to the index</li>
+<li><strong>git commit</strong> - Record changes to the repository</li>
+<li><strong>git push</strong> - Update remote refs along with associated objects</li>
+</ul>
+</div>
+<div id="git-comfortable" class="titleslide slide section level1"><h1>Git Comfortable</h1></div><div id="git-fetch-merge-pull" class="slide section level2">
+<h1>git fetch, merge, pull</h1>
+<ul>
+<li><strong>git fetch</strong> - Download objects and refs from another repository</li>
+<li><strong>git merge</strong> - Join two or more development histories together</li>
+<li><strong>git pull</strong> - Fetch from and integrate with another repository or a local branch</li>
+</ul>
+</div><div id="git-revert-reset-checkout" class="slide section level2">
+<h1>git revert, reset, checkout</h1>
+<ul>
+<li><strong>git revert</strong> - Revert some existing commits</li>
+<li><strong>git reset</strong> - Reset current HEAD to the specified state</li>
+<li><strong>git checkout</strong> - Checkout a branch or paths to the working tree</li>
+</ul>
+</div>
+<div id="git-nasty" class="titleslide slide section level1"><h1>Git Nasty</h1></div><div id="merge-conflicts" class="slide section level2">
+<h1>merge conflicts</h1>
+</div><div id="branching" class="slide section level2">
+<h1>branching</h1>
+</div>
+<div id="questions" class="titleslide slide section level1"><h1>Questions?</h1></div>
+</body>
+</html>
