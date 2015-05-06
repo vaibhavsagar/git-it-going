@@ -81,6 +81,7 @@ Directory           Area         (Repository)
 
 ## merge conflicts
 
+- Three way merge: local, remote, ancestor.
 -
 ```
 <<<<<<< HEAD
