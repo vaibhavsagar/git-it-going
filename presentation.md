@@ -55,6 +55,7 @@ Directory           Area         (Repository)
 
 - **git status** - Show the working tree status
 - **git log** - Show commit logs
+- **git diff** - Show changes between commits, commit and working tree, etc
 
 ## git add, commit, push
 
@@ -80,6 +81,39 @@ Directory           Area         (Repository)
 
 ## merge conflicts
 
+-
+```
+<<<<<<< HEAD
+Local changes
+=======
+Remote changes
+>>>>>>> <branch>
+```
+
 ## branching
+
+- This is what our history will look like:
+
+```
+  *
+  |\
+  | *
+  * |
+  |/
+  *
+  *
+  |\
+  | *
+  * |
+  |/
+  *
+  *
+```
+
+## sources
+
+- [git-scm.com](http://git-scm.com)
+- [Just enough Git to be (less) dangerous](http://eev.ee/blog/2015/04/24/just-enough-git-to-be-less-dangerous/)
+- [Git Basics](https://www.atlassian.com/pt/git/tutorial/git-basics)
 
 # Questions?
