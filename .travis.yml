@@ -1,7 +1,7 @@
-language: haskell
-install: cabal update && cabal install pandoc
-cache: cabal
-script: pandoc -t slidy presentation.md -o presentation.html --standalone
+language: c
+sudo: true
+install: bash .ci/prepare.sh
+script: make
 notifications:
   email:
     on_success: always
