@@ -1,6 +1,6 @@
-language: c
-sudo: true
-install: bash .ci/prepare.sh
+language: haskell
+install: cabal update && cabal install pandoc
+cache: cabal
 script: make
 notifications:
   email:
