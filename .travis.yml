@@ -1,7 +1,7 @@
 language: haskell
 install: cabal update && cabal install pandoc
 cache: cabal
-script: make
+script: pandoc -t slidy presentation.md -o presentation.html --standalone
 notifications:
   email:
     on_success: always
